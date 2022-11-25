@@ -33,6 +33,14 @@ public class Category {
 	@OneToMany(mappedBy = "category")
 	private List<Reply> replies = new ArrayList<>();
 
+	public Category() {
+	}
+
+	public Category(String title, String message, Course course) {
+		this.title = title;
+		this.message = message;
+		this.course = course;
+	}
 
 	@Override
 	public int hashCode() {

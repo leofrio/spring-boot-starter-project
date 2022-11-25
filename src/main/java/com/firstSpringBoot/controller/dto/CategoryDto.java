@@ -2,6 +2,7 @@ package com.firstSpringBoot.controller.dto;
 
 import com.firstSpringBoot.model.Category;
 import lombok.Getter;
+import org.springframework.data.domain.Page;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -24,7 +25,7 @@ public class CategoryDto{
         this.creationDate = category.getCreationDate();
     }
 
-    public static List<CategoryDto> convert(List<Category> categories) {
-         return categories.stream().map(CategoryDto::new).collect(Collectors.toList());
+    public static Page<CategoryDto> convert(Page<Category> categories) {
+         return categories.map(CategoryDto::new);
     }
 }
