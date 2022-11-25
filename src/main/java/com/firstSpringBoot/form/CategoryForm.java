@@ -1,4 +1,4 @@
-package com.firstSpringBoot.controller.form;
+package com.firstSpringBoot.form;
 
 import com.firstSpringBoot.model.Category;
 import com.firstSpringBoot.repository.CourseRepository;

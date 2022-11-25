@@ -1,4 +1,4 @@
-package com.firstSpringBoot.controller.dto;
+package com.firstSpringBoot.dto;
 
 import com.firstSpringBoot.model.Reply;
 import lombok.Getter;

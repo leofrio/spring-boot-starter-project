@@ -1,12 +1,10 @@
-package com.firstSpringBoot.controller.dto;
+package com.firstSpringBoot.dto;
 
 import com.firstSpringBoot.model.Category;
 import lombok.Getter;
 import org.springframework.data.domain.Page;
 
 import java.time.LocalDateTime;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class CategoryDto{
     @Getter

@@ -1,7 +1,6 @@
-package com.firstSpringBoot.controller.dto;
+package com.firstSpringBoot.dto;
 
 import com.firstSpringBoot.model.Category;
-import com.firstSpringBoot.model.Reply;
 import com.firstSpringBoot.model.Status;
 import lombok.Getter;
 import lombok.Setter;

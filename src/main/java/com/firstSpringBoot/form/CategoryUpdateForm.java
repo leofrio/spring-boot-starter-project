@@ -1,4 +1,4 @@
-package com.firstSpringBoot.controller.form;
+package com.firstSpringBoot.form;
 
 import com.firstSpringBoot.model.Category;
 import com.firstSpringBoot.repository.CategoryRepository;
@@ -18,10 +18,5 @@ public class CategoryUpdateForm {
     @NotNull @NotEmpty @Length(min = 3)
     private String message;
 
-    public Category update(long id, CategoryRepository categoryRepository) throws Exception {
-        Category category =categoryRepository.findById(id).orElseThrow(() -> new Exception("user not found"));
-        category.setTitle(this.title);
-        category.setMessage(this.message);
-        return category;
-    }
+    //take out put in service
 }
